@@ -1,0 +1,37 @@
+version: '3'
+
+services:
+
+
+  web:
+    container_name: web
+    build: ./docker/nginx
+    volumes:
+      - ./app:/var/www/html
+    working_dir: /etc/nginx
+    restart: always
+    environment:
+      - VIRTUAL_HOST= #輸入在noip註冊的網址
+      - LETSENCRYPT_HOST= #輸入在noip註冊的網址
+      - VIRTUAL_PORT=80
+      - LETSENCRYPT_EMAIL= #輸入在noip註冊的email
+    links:
+      - python
+
+  python:
+    container_name: python
+    build: ./docker/python
+    volumes:
+      - ./app:/var/www/html
+    working_dir: /var/www/html
+
+
+
+
+networks:
+   default:
+     external:
+       name: proxy
+volumes:
+  data-volume:
+

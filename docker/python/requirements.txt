@@ -1,0 +1,6 @@
+line-bot-sdk==1.8.0
+Django==3.2
+uWSGI
+openai
+
+
