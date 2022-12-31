@@ -2,7 +2,7 @@
 # 一個Django docker平台，有著SSL認證的https網址，結合chatgpt和linebot的功能的聊天機器人平台
 
 
-### [English](https://github.com/pyfbsdk59/Django-ChatGPT-linebot-docker-SSL/blob/main/README_en.md)
+### [English](https://github.com/pyfbsdk59/Django-ChatGPT-linebot-docker-SSL/blob/main/README.md)
 ### [日本語](https://github.com/pyfbsdk59/Django-ChatGPT-linebot-docker-SSL/blob/main/README_jp.md)
 
 
